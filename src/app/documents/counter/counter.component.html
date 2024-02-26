@@ -1,0 +1,26 @@
+<style>
+    button{
+        margin-right: 5px;
+    }
+</style>
+
+<app-header [count]="counterArr.length"></app-header>
+<div class="container-fluid">
+    <div class="p-3">
+    <div class="my-2">
+        <button type="button" class="btn btn-primary p-3 w-25 rounded-0 " style="text-align: left; color: #000000;">
+            <h3 class="m-0"> Counter App <span class="badge rounded-circle badge-secondary bg-secondary px-3 py-2 m-0 "><h5 class="m-0">{{counterArr.length}}</h5></span></h3>
+        </button>
+    </div>
+    <div class="mb-2">
+        <button type="button" class="btn btn-primary" (click)="resetAll()">Reset</button>
+        <button type="button" class="btn btn-primary" (click)="addCounter()">Add</button>
+    </div>
+    <div *ngFor="let item of counterArr; let idx=index" class="mb-2">
+        <button type="button" class="btn btn-primary">{{item.count}}</button>
+        <button type="button" class="btn btn-secondary" (click)="counterActions('INC',idx)">Increment</button>
+        <button type="button" class="btn btn-secondary" (click)="counterActions('DEC',idx)">Decrement</button>
+        <button type="button" class="btn btn-danger" (click)="counterActions('DEL',idx)">Delete</button>
+    </div>
+</div>
+</div>

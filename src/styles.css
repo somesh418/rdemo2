@@ -1,0 +1,5 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body                      {height: 100%;}
+app-root, app-counter, app-weather          {height: 100%; display: block}  
+.container-fluid                {height: 100%;}

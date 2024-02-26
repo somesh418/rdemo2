@@ -1,0 +1,7 @@
+.weather-img {height: 200px;
+    width: 250px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+.weather-img img  {height: 245px;}
